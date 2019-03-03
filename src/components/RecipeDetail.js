@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {recipe} from '../tempDetails';
+
 
 export default class RecipeDetail extends Component {
 
@@ -31,7 +31,13 @@ export default class RecipeDetail extends Component {
   // Second Way
 
   state = {
-    recipe:recipe
+    recipe: {f2f_url: "",
+    image_url:"",
+    ingredients: [],
+    publisher: "",
+    publisher_url: "",
+    source_url:
+      ""}
   }
 
   async componentDidMount() {

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import {recipes} from './tempList';
 import RecipeList from './components/RecipeList';
 import RecipeDetail from './components/RecipeDetail';
 
 class App extends Component {
 
   state = {
-      recipes: recipes,
+      recipes: [],
       url: 'https://www.food2fork.com/api/search?key=3f1d40996d23dc88f110b264b29fc73e',
       base_url: 'https://www.food2fork.com/api/search?key=3f1d40996d23dc88f110b264b29fc73e',
       detail_id: 35338,
