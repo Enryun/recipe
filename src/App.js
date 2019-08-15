@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import RecipeList from './components/RecipeList';
 import RecipeDetail from './components/RecipeDetail';
+import Footer from './components/Footer';
 
 class App extends Component {
 
@@ -97,7 +98,7 @@ class App extends Component {
     return (
       <React.Fragment>
         {this.displayPage(this.state.pageIndex)}
-       
+       <Footer />
       </React.Fragment>
     );
   }
